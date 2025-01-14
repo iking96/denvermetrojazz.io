@@ -12,8 +12,31 @@
       <p class="by-line">A professional caliber big band for non-occupational musicians</p>
     </div>
 
+    <nav>
+      <ul class="nav-list">
+        <li><a class="page-link" href="/">Home</a></li>
+        <li><a class="page-link" href="/calendar">Upcoming Events</a></li>
+      </ul>
+    </nav>
+
     <main class="site-main">
       {{ content }}
     </main>
+
+    <style>
+      .nav-list {
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .nav-list li {
+        display: inline-block;
+        margin: 0 10px
+      }
+      .nav-list a {
+        text-decoration: none;
+      }
+    </style>
   </body>
 </html>
