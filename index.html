@@ -3,23 +3,63 @@ layout: site-layout
 ---
 
 <div class="main-content">
-  <h1 class="centered">Welcome to Denver Metro Jazz</h1>
+
+  <p class = "welcome-text"><i>Welcome to</i></p>
+  <h1 class="centered">Denver Metro Jazz</h1>
 
   <p>
-    Denver Metro Jazz is a community jazz band based in Denver, Colorado, launching our inaugural season in 2025. Our mission is to offer non-occupational musicians the opportunity to experience the thrill of playing in a professional-level big band, without the commitments of full-time musicianship.
-  </p>
-  <p>
-    Our weekly rehearsals, held at 3575 S. Sherman in Englewood, will be guided by a professional jazz band director who will provide valuable mentorship, education, and musical growth opportunities. The band will hold 6-12 concerts throughout the season performing a diverse and challenging repertoire of big band arrangements.
-  </p>
-  <p>
-    To help cover costs for music, rehearsal space, insurance, and administration, band members will pay monthly dues of $80. In return, you'll have the chance to be part of a musically fulfilling and rewarding experience with like-minded musicians.
+    Denver's premier community big band-bringing live jazz to public spaces, festivals, and local events. Built by and for the community, Denver Metro Jazz features local musicians at local venues with the aim of providing the people of Colorado accessible and professional caliber big band music!
   </p>
 
-  <h2>Instrument Openings</h2>
-  The band is seeking musicians for the <strong>Trombone</strong> and <strong>Trumpet</strong> sections.
+  <img src="assets/images/full_band.jpg" class="full-band-img" alt="Full Band">
 
-  <h2>How to Join</h2>
-  <p>
-    If you are interested in joining Denver Metro Jazz as a member or a sub, please email us can email us at <a href="mailto:denvermetrojazz@gmail.com">denvermetrojazz@gmail.com</a> or call us at (720) 778-0967.
-  </p>
+  <style>
+    .welcome-text {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 0.1em;
+    }
+
+    h1 {
+      margin-top: 0px;
+      font-size: 3.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background: linear-gradient(
+        150deg,
+        #00affa 20%,
+        #022a3d 30%,
+        #0190cd 70%,
+        #7953cd 80%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      background-size: 500% auto;
+      animation: textShine 30s ease-in-out infinite alternate;
+    }
+
+    @keyframes textShine {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+    
+    .full-band-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 300px;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  </style>
 </div>
