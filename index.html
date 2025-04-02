@@ -13,6 +13,38 @@ layout: site-layout
 
   <img src="assets/images/full_band.jpg" class="full-band-img" alt="Full Band">
 
+  <br />
+
+  <div class="container">
+    <div class="text">
+        <h2 class="centered">Our Mission</h2>
+        <p>We strive to bring high-quality, accessible jazz to Denver's communities, offering engaging performances that connect and inspire audiences. Through our work, we aim to enrich Denver's cultural landscape and keep the idiom of jazz thriving in our cities.</p>
+    </div>
+    <div class="image">
+      <img src="assets/images/union_station.jpg" alt="Trumpets">
+    </div>
+  </div>
+
+  <div class="container flipped">
+    <div class="text">
+        <h2 class="centered">Our Music</h2>
+        <p>Our repertoire includes a diverse range of music, from the timeless classics of jazz legends to iconic pop hits reimagined through the big band sound. Our selections also includes new arrangements from talented local artists, showcasing the next generation of the genre.</p>
+    </div>
+    <div class="image">
+      <img src="assets/images/saxophone.jpg" alt="Trumpets">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="text">
+        <h2 class="centered">Our Members</h2>
+        <p>Our musicians are dedicated, non-occupational musicians from the greater Denver area, committed to excellence and fostering a culture of growth, collaboration, and professionalism in every performance.</p>
+    </div>
+    <div class="image">
+      <img src="assets/images/trumpet_members.jpg" alt="Trumpets">
+    </div>
+  </div>
+
   <style>
     .welcome-text {
       font-size: 24px;
@@ -58,6 +90,32 @@ layout: site-layout
       border-radius: 10px;
     }
 
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    .text {
+        width: 60%; /* Adjust width as needed */
+    }
+
+    .image {
+        width: 30%; /* Adjust width as needed */
+    }
+
+    .container img {
+      width: 300px; /* Fixed width */
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Add a reverse layout for flipped sections */
+    .container.flipped {
+        flex-direction: row-reverse;
+    }
+    
     p {
       font-size: 20px;
     }
