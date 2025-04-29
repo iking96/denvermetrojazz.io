@@ -53,3 +53,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+plugins:
+  - jekyll-seo-tag
+
+title: Denver Metro Jazz Big Band | Live Jazz Performances, Community Events & Concerts in Denver
+tagline: Denver’s Premier Non-Occupational Big Band-Live Jazz, Local Talent, Unforgettable Music
+description: Denver Metro Jazz is Denver’s premier non-occupational big band, performing live jazz concerts, community events, and private functions across the Mile High City. Experience the energy and artistry of talented local musicians as they bring classic and contemporary big band jazz to audiences of all ages. Stay up to date with our upcoming shows, special events, and latest news
