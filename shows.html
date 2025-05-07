@@ -17,6 +17,15 @@ layout: site-layout
         <h2>{{ show.title }}</h2>
         <p class="show-description">{{ show.description | markdownify }}</p>
         <p class="show-address">{{ show.address }}</p>
+        <div class="link-container">
+          {% if show.ticket_url %}
+            <a href="{{ show.ticket_url }}" target="_blank" rel="noopener" class="buy-tickets-button">Buy Tickets Now!</a>
+          {% endif %}
+          {% if show.more_info_url %}
+            <a href="{{ show.more_info_url }}" target="_blank" rel="noopener" class="more-info-button">More Information</a>
+          {% endif %}
+      </div>
+
       </div>
     {% endif %}
   {% endfor %}
@@ -105,6 +114,41 @@ layout: site-layout
   }
   .past-shows .show-date {
     color: #555;
+  }
+
+  .link-container {
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  .buy-tickets-button {
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    background-color: #007BFF; /* Choose your preferred color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+
+  .buy-tickets-button:hover {
+    background-color: #0056b3;
+  }
+
+  .more-info-button {
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    background-color: #6c757d; /* Choose your preferred color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+
+  .more-info-button:hover {
+    background-color: #495057;
   }
 
   /* Optional: Responsive image for smaller screens */

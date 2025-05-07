@@ -1,12 +1,27 @@
+- title: DMJ Debuts at Dazzle
+  description: Celebrate our live debut at Dazzle Denver! This special performance features jazz interpretations of iconic themes from television, Broadway, video games, and film. From sweeping cinematic scores to nostalgic TV intros and musical theater highlights, familiar melodies are reimagined with style, sophistication, and swing. This genre-crossing set offers a fresh perspective on beloved tunes, inviting audiences of all backgrounds to celebrate the new era of Big Band Jazz in Denver.
+  date: 2025-07-28
+  time: 7:00 PM
+  address: 1080 14th Street, Denver, CO
+  image: /assets/images/dazzle_logo.png
+  ticket_url: https://www.handstamp.com/e/denver-metro-jazz-big-band-xhjpbdni
 - title: DMJ & University Hills Neighborhood Association
-  description: Join us at Eisenhower Park with for an evening of big band excitement. Enjoy powerful, swinging renditions of your favorite themes from TV, movies, video games, and theater; <strong>all performed live by a full big band.</strong> Bring your friends and family for a memorable night of music in the park!
+  description: Join us at Eisenhower Park for an evening of big band excitement! Bring your friends, family, and picnic blankets to enjoy the vibrant sounds of a full big band performing live under the open sky. Savor delicious local food trucks, relax on the grass, and soak up the lively community atmosphere. Don’t miss this chance to make lasting memories with fantastic music and wonderful company!
   date: 2025-08-15
   time: 6:30 PM
   address: 4300 E Dartmouth Ave, Denver, CO
   image: /assets/images/university_hills_neighborhood_association.png
+- title: Englewood First Friday Series
+  description: Kick off your weekend with an evening of live big band music, local art, and delicious food in downtown Englewood. Enjoy the festive atmosphere as you explore artisan booths, sample bites from food trucks, and relax with friends and family. It’s the perfect way to experience the energy and creativity of the community while soaking up great music and summer vibes.
+  date: 2025-10-03
+  time: 6:00 PM
+  address: 1000 Englewood Pkwy, Englewood, CO
+  image: /assets/images/englewood_logo.png
+  more_info_url: https://www.englewoodco.gov/our-city/events/upcoming/first-friday-series
 - title: Santa Fe Art Walk 1st Friday
   description: Enjoy an evening of lively big band jazz as we perform at the Denver Art Society. Experience the energy and creativity of our local musicians in one of Denver’s most inspiring art spaces-perfect for music and art lovers alike!
   date: 2025-12-05
   time: 9:00 PM
-  address: 734 Santa Fe Dr, Denver, CO 80204
-  image: /assets/images/denver_art_society.jpeg
+  address: 734 Santa Fe Dr, Denver, CO
+  image: /assets/images/denver_art_society_2.jpg
+  more_info_url: https://denversartdistrict.org/first-friday
