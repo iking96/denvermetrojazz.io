@@ -12,7 +12,9 @@ layout: site-layout
         <img src="{{ show.image }}" alt="{{ show.title }} poster" class="show-image">
         <p class="show-date">
           {{ show.date | date: "%B %d, %Y" }}
-          <span class="show-time">at {{ show.time }}</span>
+          {% if show.time %}
+            <span class="show-time">at {{ show.time }}</span>
+          {% endif %}
         </p>
         <h2>{{ show.title }}</h2>
         <p class="show-description">{{ show.description | markdownify }}</p>
@@ -48,7 +50,9 @@ layout: site-layout
         <img src="{{ show.image }}" alt="{{ show.title }} poster" class="show-image">
         <p class="show-date">
           {{ show.date | date: "%B %d, %Y" }}
-          <span class="show-time">at {{ show.time }}</span>
+          {% if show.time %}
+            <span class="show-time">at {{ show.time }}</span>
+          {% endif %}
         </p>
         <h2>{{ show.title }}</h2>
         <p class="show-description">{{ show.description | markdownify }}</p>
