@@ -10,12 +10,14 @@ layout: site-layout
     {% if show_date >= today %}
       <div class="show-box">
         <img src="{{ show.image }}" alt="{{ show.title }} poster" class="show-image">
-        <p class="show-date">
-          {{ show.date | date: "%B %d, %Y" }}
-          {% if show.time %}
-            <span class="show-time">at {{ show.time }}</span>
-          {% endif %}
-        </p>
+        {% if show.dont_show_date == false %}
+          <p class="show-date">
+            {{ show.date | date: "%B %d, %Y" }}
+            {% if show.time %}
+              <span class="show-time">at {{ show.time }}</span>
+            {% endif %}
+          </p>
+        {% endif %}
         <h2>{{ show.title }}</h2>
         <p class="show-description">{{ show.description | markdownify }}</p>
         <p class="show-address">{{ show.address }}</p>
@@ -48,12 +50,14 @@ layout: site-layout
     {% for show in past_shows %}
       <div class="show-box">
         <img src="{{ show.image }}" alt="{{ show.title }} poster" class="show-image">
-        <p class="show-date">
-          {{ show.date | date: "%B %d, %Y" }}
-          {% if show.time %}
-            <span class="show-time">at {{ show.time }}</span>
-          {% endif %}
-        </p>
+        {% if show.dont_show_date == false %}
+          <p class="show-date">
+            {{ show.date | date: "%B %d, %Y" }}
+            {% if show.time %}
+              <span class="show-time">at {{ show.time }}</span>
+            {% endif %}
+          </p>
+        {% endif %}
         <h2>{{ show.title }}</h2>
         <p class="show-description">{{ show.description | markdownify }}</p>
         <p class="show-address">{{ show.address }}</p>

@@ -25,3 +25,9 @@
   address: 734 Santa Fe Dr, Denver, CO
   image: /assets/images/denver_art_society_2.jpg
   more_info_url: https://denversartdistrict.org/first-friday
+- title: VenuHub 2025 Christmas Meetup
+  description: Denver Metro Jazz will provide the soundtrack for VenuHub’s 2025 Christmas Meetup at the historic Tivoli Turnhalle. This festive celebration brings together over 100 Denver-area event professionals for an evening of networking, holiday spirit, and live big band jazz. _This is a private event and not open to the public._
+  date: 2025-12-17
+  dont_show_date: true
+  time: 6:30 PM
+  image: /assets/images/venuhub_logo.png
