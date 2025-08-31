@@ -6,28 +6,33 @@
   image: /assets/images/dazzle_logo.png
   ticket_url: https://www.handstamp.com/e/denver-metro-jazz-big-band-xhjpbdni
 - title: Englewood First Friday Series
-  description: Kick off your weekend with an evening of live big band music, local art, and delicious food in downtown Englewood. Enjoy the festive atmosphere as you explore artisan booths, sample bites from food trucks, and relax with friends and family. It’s the perfect way to experience the energy and creativity of the community while soaking up great music and summer vibes.
+  description: Kick off your weekend with an evening of live jazz, local art, and delicious food in downtown Englewood. Enjoy the festive atmosphere as you explore artisan booths, sample bites from food trucks, and relax with friends and family. It’s the perfect way to experience the energy and creativity of the community while soaking up great music and fall vibes. Denver Metro Jazz will feature sets from our <b>Big Band</b> and <b>Combo</b>. 
   date: 2025-10-03
   time: 6:00 PM
   address: 1000 Englewood Pkwy, Englewood, CO
   image: /assets/images/englewood_logo.png
   more_info_url: https://www.englewoodco.gov/our-city/events/upcoming/first-friday-series
 - title: Wounded Healers Veteran’s Day Celebration
-  description: Celebrate Veterans Day with Denver Metro Jazz Big Band and Combo at the Wounded Healers Veteran’s Day Celebration—featuring vintage military style, big band swing, and dancing in honor of our veterans.
+  description: Celebrate Veterans Day with Denver Metro Jazz <b>Big Band</b> and <b>Combo</b> at the Wounded Healers Veteran’s Day Celebration—featuring vintage military style, big band swing, and dancing in honor of our veterans.
   date: 2025-11-09
   time: 6:30 PM
   address: 833 Santa Fe Drive, Denver, CO
   image: /assets/images/wounded_healer_logo.png
 - title: Santa Fe Art Walk 1st Friday
-  description: Enjoy an evening of lively jazz with the Denver Metro Jazz combo as we perform at the Denver Art Society. Experience the energy and creativity of our local musicians in one of Denver’s most inspiring art spaces-perfect for music and art lovers alike!
+  description: Enjoy an evening of lively jazz with the Denver Metro Jazz <b>Combo</b> as we perform at the Denver Art Society. Experience the energy and creativity of our local musicians in one of Denver’s most inspiring art spaces-perfect for music and art lovers alike!
   date: 2025-12-05
   time: 9:00 PM
   address: 734 Santa Fe Dr, Denver, CO
   image: /assets/images/denver_art_society_2.jpg
   more_info_url: https://denversartdistrict.org/first-friday
 - title: VenuHub 2025 Christmas Meetup
-  description: Denver Metro Jazz will provide the soundtrack for VenuHub’s 2025 Christmas Meetup at the historic Tivoli Turnhalle. This festive celebration brings together over 100 Denver-area event professionals for an evening of networking, holiday spirit, and live big band jazz. _This is a private event and not open to the public._
+  description: The Denver Metro Jazz <b>Big Band</b> and <b>Combo</b> will provide the soundtrack for VenuHub’s 2025 Christmas Meetup at the historic Tivoli Turnhalle. This festive celebration brings together over 100 Denver-area event professionals for an evening of networking, holiday spirit, and live big band jazz. _This is a private event and not open to the public._
   date: 2025-12-17
   dont_show_date: true
   time: 6:30 PM
   image: /assets/images/venuhub_logo.png
+- title: DMJ @ Bar 404
+  description: Ring in the new year with Denver Metro Jazz <b>Big Band</b> and <b>Combo</b> at Bar 404, bringing lively swing and classic jazz to this beloved South Broadway spot. Enjoy an evening of great music, good vibes, and a welcoming atmosphere that’s perfect for catching up with friends or discovering new sounds.
+  date: 2026-01-29
+  time: 7:00 PM
+  image: /assets/images/bar_404_logo.webp

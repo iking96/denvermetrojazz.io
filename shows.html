@@ -10,7 +10,7 @@ layout: site-layout
     {% if show_date >= today %}
       <div class="show-box">
         <img src="{{ show.image }}" alt="{{ show.title }} poster" class="show-image">
-        {% if show.dont_show_date == false %}
+        {% if show.dont_show_date != true %}
           <p class="show-date">
             {{ show.date | date: "%B %d, %Y" }}
             {% if show.time %}
@@ -50,7 +50,7 @@ layout: site-layout
     {% for show in past_shows %}
       <div class="show-box">
         <img src="{{ show.image }}" alt="{{ show.title }} poster" class="show-image">
-        {% if show.dont_show_date == false %}
+        {% if show.dont_show_date != true %}
           <p class="show-date">
             {{ show.date | date: "%B %d, %Y" }}
             {% if show.time %}
@@ -88,8 +88,9 @@ layout: site-layout
 
   .show-image {
     float: right;
-    width: 320px;
+    width: auto; 
     max-width: 60%;
+    max-height: 200px;
     height: auto;
     margin-left: 2rem;
     margin-bottom: 1rem;
