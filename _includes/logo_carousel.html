@@ -1,0 +1,71 @@
+<div class="logos">
+  <div class="logo_items">
+    <img src="/assets/images/dazzle_logo.png" />
+    <img src="/assets/images/wounded_healer_logo.png" />
+    <img src="/assets/images/englewood_logo.png" />
+    <img src="/assets/images/christkindl_market_denver_logo.jpg" />
+
+    <!-- duplicate logos -->
+    <img src="/assets/images/dazzle_logo.png" />
+    <img src="/assets/images/wounded_healer_logo.png" />
+    <img src="/assets/images/englewood_logo.png" />
+    <img src="/assets/images/christkindl_market_denver_logo.jpg.png" />
+  </div>
+  
+  <style>
+    @keyframes slides {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        /* Translate by the exact width of one logo set including margins */
+        transform: translateX(-50%); /* Adjust this pixel value */
+      }
+    }
+
+    .logos {
+      overflow: hidden;
+      padding: 30px 0;
+      position: relative;
+      /* Optional max-width or width */
+      width: 100%;
+    }
+
+    .logos:before,
+    .logos:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .logos:before {
+      left: 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+    }
+
+    .logos:after {
+      right: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+    }
+
+    .logo_items {
+      display: flex;
+      animation: 25s slides linear infinite;
+      min-width: max-content;
+    }
+
+    .logos:hover .logo_items {
+      animation-play-state: paused;
+    }
+
+    .logo_items img {
+      height: 100px;
+      margin-right: 100px; /* spacing */
+      flex-shrink: 0; /* prevent shrinking */
+    }
+  </style>
+</div>
