@@ -58,4 +58,4 @@
   time: 7:00 PM
   address: 3654 Navajo St, Denver, CO 80211
   image: /assets/images/the_bug_theatre_logo.png
-  ticket_url: https://www.eventbrite.com/e/denver-metro-jazz-swing-into-spring-a-tribute-to-the-count-basie-orchestra-tickets-1850325797269
+  include: swing_into_spring_eventbrite.html
