@@ -52,3 +52,10 @@
   time: 1:00 PM
   address: 1325 Pearl Street, Boulder, CO 80302
   image: /assets/images/taste_of_pearl_logo.jpg
+- title: Swing into Spring @ The Bug Theater
+  description: Celebrate the arrival of spring with Denver Metro Jazz's signature tribute to the legendary Count Basie Orchestra, featuring a complete performance of the iconic <i>Kansas City Suite</i>. Experience both the <b>Big Band</b> and <b>Combo</b> as they bring this masterwork and other timeless classics to life at The Bug Theatre—Denver's historic 1912 venue in the Navajo Street Arts District. This special evening will transport you back to the heyday of big band swing in an intimate setting that's perfect for both longtime jazz lovers and newcomers alike.
+  date: 2026-04-18
+  time: 7:00 PM
+  address: 3654 Navajo St, Denver, CO 80211
+  image: /assets/images/the_bug_theatre_logo.png
+  ticket_url: https://www.eventbrite.com/e/denver-metro-jazz-swing-into-spring-a-tribute-to-the-count-basie-orchestra-tickets-1850325797269
