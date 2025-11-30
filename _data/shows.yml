@@ -46,3 +46,9 @@
   time: 7:00 PM
   address: 404 N Broadway, Denver, CO 80203
   image: /assets/images/bar_404_logo.webp
+- title: Taste of Pearl
+  description: Experience Downtown Boulder's signature food, wine, and shopping event with live jazz from the Denver Metro Jazz <b>Big Band</b> and <b>Combo</b>. Taste of Pearl brings together 15 local restaurants, 15+ beverage partners, and premier retail boutiques for an afternoon of exceptional pairings and live music. Stroll Pearl Street while savoring creative bites paired with Colorado wines, craft cocktails, and the smooth sounds of jazz—an elegant celebration of Boulder's culinary and cultural scene.
+  date: 2026-03-29
+  time: 1:00 PM
+  address: 1325 Pearl Street, Boulder, CO 80302
+  image: /assets/images/taste_of_pearl_logo.jpg
