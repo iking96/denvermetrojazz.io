@@ -2,12 +2,58 @@
 layout: site-layout
 ---
 
-<h1 class="centered">Upcoming Shows</h1>
-<div class="shows-list">
-  {% assign today = 'now' | date: '%Y%m%d' | plus: 0 %}
+{% assign today = 'now' | date: '%Y%m%d' | plus: 0 %}
+{% assign has_highlighted = false %}
+{% for show in site.data.shows %}
+  {% assign show_date = show.date | date: '%Y%m%d' | plus: 0 %}
+  {% if show_date >= today and show.highlighted == true %}
+    {% assign has_highlighted = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if has_highlighted %}
+<h1 class="centered">Featured Shows</h1>
+<div class="shows-list highlighted-shows">
   {% for show in site.data.shows %}
     {% assign show_date = show.date | date: '%Y%m%d' | plus: 0 %}
-    {% if show_date >= today %}
+    {% if show_date >= today and show.highlighted == true %}
+      <div class="show-box highlighted-show-box">
+        <img src="{{ show.image }}" alt="{{ show.title }} poster" class="show-image">
+        {% if show.dont_show_date != true %}
+          <p class="show-date">
+            {{ show.date | date: "%B %d, %Y" }}
+            {% if show.time %}
+              <span class="show-time">at {{ show.time }}</span>
+            {% endif %}
+          </p>
+        {% endif %}
+        <h2>{{ show.title }}</h2>
+        <p class="show-description">{{ show.description | markdownify }}</p>
+        <p class="show-address">{{ show.address }}</p>
+        <div class="link-container">
+          {% if show.include %}
+            {% include {{ show.include }} %}
+          {% endif %}
+          {% if show.ticket_url %}
+            <a href="{{ show.ticket_url }}" target="_blank" rel="noopener" class="buy-tickets-button">Buy Tickets Now!</a>
+          {% endif %}
+          {% if show.more_info_url %}
+            <a href="{{ show.more_info_url }}" target="_blank" rel="noopener" class="more-info-button">More Information</a>
+          {% endif %}
+      </div>
+
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+{% endif %}
+
+<h1 class="centered">Upcoming Shows</h1>
+<div class="shows-list">
+  {% for show in site.data.shows %}
+    {% assign show_date = show.date | date: '%Y%m%d' | plus: 0 %}
+    {% if show_date >= today and show.highlighted != true %}
       <div class="show-box">
         <img src="{{ show.image }}" alt="{{ show.title }} poster" class="show-image">
         {% if show.dont_show_date != true %}
@@ -87,6 +133,16 @@ layout: site-layout
     min-height: 220px;
     overflow: hidden;
     position: relative;
+  }
+
+  .highlighted-show-box {
+    background: linear-gradient(135deg, #fff9e6 0%, #fff5d6 100%);
+    border: 2px solid #d4a017;
+    box-shadow: 0 4px 16px rgba(212, 160, 23, 0.15);
+  }
+
+  .highlighted-shows {
+    margin-bottom: 3rem;
   }
 
   .show-image {
