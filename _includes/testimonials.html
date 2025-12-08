@@ -1,0 +1,107 @@
+<div class="testimonials-section">
+  <h2 class="centered testimonials-title">Partner Testimonials</h2>
+
+  <div class="testimonials-carousel">
+    {% for testimonial in site.data.testimonials %}
+      <div class="testimonial-card {% if forloop.first %}active{% endif %}">
+        <p class="testimonial-quote">"{{ testimonial.quote }}"</p>
+        <p class="testimonial-author">— {{ testimonial.author }}{% if testimonial.title %}, {{ testimonial.title }}{% endif %}</p>
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+<script>
+  (function() {
+    const cards = document.querySelectorAll('.testimonial-card');
+    let currentIndex = 0;
+    const rotationInterval = 10000; // 10 seconds per testimonial
+
+    function showTestimonial(index) {
+      // Remove active class from all
+      cards.forEach(card => card.classList.remove('active'));
+
+      // Add active class to current
+      cards[index].classList.add('active');
+    }
+
+    function nextTestimonial() {
+      currentIndex = (currentIndex + 1) % cards.length;
+      showTestimonial(currentIndex);
+    }
+
+    // Auto-rotate testimonials
+    setInterval(nextTestimonial, rotationInterval);
+  })();
+</script>
+
+<style>
+  .testimonials-section {
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+
+  .testimonials-title {
+    margin-bottom: 30px;
+    font-size: 1.75em;
+    color: #022a3d;
+  }
+
+  .testimonials-carousel {
+    position: relative;
+    min-height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial-card {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial-card.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .testimonial-quote {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #777;
+    font-style: normal;
+    margin: 0 0 15px 0;
+  }
+
+  .testimonial-author {
+    color: #666;
+    font-size: 0.95em;
+    margin: 0;
+    font-style: normal;
+  }
+
+  @media (max-width: 768px) {
+    .testimonials-section {
+      padding: 20px 15px;
+    }
+
+    .testimonial-quote {
+      font-size: 1.05em;
+    }
+
+    .testimonial-author {
+      font-size: 0.9em;
+    }
+  }
+</style>
