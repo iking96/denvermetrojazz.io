@@ -60,3 +60,8 @@
   image: /assets/images/the_bug_theatre_logo.png
   include: swing_into_spring_eventbrite.html
   highlighted: true
+- title: DMJ @ Broadway Roxy
+  description: Join Denver Metro Jazz for a night of live jazz at Broadway Roxy, Denver's vintage-modern speakeasy on South Broadway. Expect great music, 1920s-inspired cocktails, and a lively atmosphere.
+  date: 2026-05-28
+  address: 554 S Broadway, Denver, CO 80209
+  image: /assets/images/roxy_logo.webp
