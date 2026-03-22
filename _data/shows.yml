@@ -63,12 +63,13 @@
 - title: DMJ @ Broadway Roxy
   description: Join Denver Metro Jazz for a night of live jazz at Broadway <b>Roxy</b>, Denver's vintage-modern speakeasy on South Broadway. Featuring the <b>Big Band</b> and <b>Combo</b>—expect great music, 1920s-inspired cocktails, and a lively atmosphere.
   date: 2026-05-28
+  time: 7:00 PM
   address: 554 S Broadway, Denver, CO 80209
   image: /assets/images/roxy_logo.webp
 - title: Highlands Street Fair
-  description: Join Denver Metro Jazz at the Highlands Street Fair—a free community celebration featuring 100+ artisans, 15+ local restaurants, and live music all day. Catch the <b>Big Band</b> as they bring the swing to one of Denver's favorite summer street festivals.
+  description: Join Denver Metro Jazz at the Highlands Street Fair—a free community celebration featuring 100+ artisans, 15+ local restaurants, and live music all day. Catch the <b>Big Band</b> from 12–1 PM as they bring the swing to one of Denver's favorite summer street festivals.
   date: 2026-06-20
-  time: 10:00 AM
+  time: 12:00 PM
   address: 32nd Ave from Irving to Perry, Denver, CO
   image: /assets/images/highlands_street_fair_logo.png
   more_info_url: https://highlandsstreetfair.com/
