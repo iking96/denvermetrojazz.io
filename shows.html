@@ -4,11 +4,14 @@ layout: site-layout
 
 {% assign today = 'now' | date: '%Y%m%d' | plus: 0 %}
 {% assign has_highlighted = false %}
+{% assign has_upcoming = false %}
 {% for show in site.data.shows %}
   {% assign show_date = show.date | date: '%Y%m%d' | plus: 0 %}
   {% if show_date >= today and show.highlighted == true %}
     {% assign has_highlighted = true %}
-    {% break %}
+  {% endif %}
+  {% if show_date >= today and show.highlighted != true %}
+    {% assign has_upcoming = true %}
   {% endif %}
 {% endfor %}
 
@@ -49,6 +52,7 @@ layout: site-layout
 </div>
 {% endif %}
 
+{% if has_upcoming %}
 <h1 class="centered">Upcoming Shows</h1>
 <div class="shows-list">
   {% for show in site.data.shows %}
@@ -83,6 +87,7 @@ layout: site-layout
     {% endif %}
   {% endfor %}
 </div>
+{% endif %}
 
 {% assign today = 'now' | date: '%Y%m%d' | plus: 0 %}
 {% assign past_shows = "" | split: "" %}
