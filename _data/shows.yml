@@ -86,3 +86,11 @@
   address: 734 Santa Fe Dr, Denver, CO
   image: /assets/images/denver_art_society_2.jpg
   more_info_url: https://denversartdistrict.org/first-friday
+- title: Denver Metro Jazz's Big Bug Holiday Spectacular
+  description: Celebrate the season with the Denver Metro Jazz <b>Big Band & Combo</b> for a swinging night of holiday jazz at The Bug Theatre—Denver's historic 1912 venue in the Navajo Street Arts District. Expect festive favorites reimagined with big band sophistication, in an intimate setting that's the perfect way to kick off the holidays.
+  date: 2026-12-19
+  time: 7:00 PM - 9:00 PM
+  address: 3654 Navajo Street, Denver, CO 80211
+  image: /assets/images/the_bug_theatre_logo.png
+  include: big_bug_holiday_spectacular_eventbrite.html
+  highlighted: true
